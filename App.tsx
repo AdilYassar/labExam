@@ -2,7 +2,7 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import QuranScreen from './QuranScreen'; // Ensure the path is correct
+import QuranScreen from './QuranScreen';
 
 export default function App() {
   return (

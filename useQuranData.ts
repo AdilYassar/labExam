@@ -17,7 +17,9 @@ const useQuranData = () => {
         } else {
           // Fetch from API if not found locally
           const response = await axios.get('https://api.alquran.cloud/v1/surah');
+          
           setData(response.data.data);
+        
           // Save fetched data to AsyncStorage
           await AsyncStorage.setItem('surahData', JSON.stringify(response.data.data));
         }
