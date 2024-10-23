@@ -1,10 +1,13 @@
+// App.tsx
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import QuranScreen from './QuranScreen'; // Ensure the path is correct
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <QuranScreen />
       <StatusBar style="auto" />
     </View>
   );
